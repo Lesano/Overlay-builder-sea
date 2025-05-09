@@ -6,7 +6,7 @@ on:
       FORK_URL:
         description: 'FORKED_URL'
         required: true
-        default: 'https://github.com/phhusson/vendor_hardware_overlay'
+        default: 'https://github.com/Lesano/vendor_hardware_overlay_sea'
 
 jobs:
   build:
@@ -23,7 +23,7 @@ jobs:
         sudo apt-get install neofetch
         sudo apt update
 
-    - name: Clone vendor_hardware_overlay
+    - name: Clone vendor_hardware_overlay_sea
       run: |
         PATH=~/bin:$PATH
         neofetch
@@ -34,9 +34,9 @@ jobs:
     - name: Run test scripts
       run: |
         PATH=~/bin:$PATH
-        cd workspace && cd vendor_hardware_overlay
-        git config --global user.name "Johx22"
-        git config --global user.email "johannjose2004@gmail.com"
+        cd workspace && cd vendor_hardware_overlay_sea
+        git config --global user.name "Lesano"
+        git config --global user.email "lesano@programmer.net"
         cd tests
         bash tests.sh
 
