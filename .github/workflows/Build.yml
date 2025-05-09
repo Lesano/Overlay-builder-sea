@@ -43,7 +43,7 @@ jobs:
     - name: Build APK's
       run: |
         PATH=~/bin:$PATH
-        cd workspace && cd vendor_hardware_overlay && cd build
+        cd workspace && cd vendor_hardware_overlay_sea && cd build
         bash build.sh
 
     - name: Upload APK
