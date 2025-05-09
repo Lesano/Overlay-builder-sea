@@ -49,5 +49,5 @@ jobs:
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
-        path: workspace/vendor_hardware_overlay/build/*.apk
+        path: workspace/vendor_hardware_overlay_sea/build/*.apk
         name: Overlays
